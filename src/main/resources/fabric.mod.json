@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ffbb",
+  "version": "${version}",
+
+  "name": "FastFlyBlockBreaking",
+  "description": "Removes 5x slower block breaking when flying is enabled in survival mode",
+  "authors": [
+    "Barteks2x",
+    "phase"
+  ],
+  "contact": {
+    "homepage": "https://github.com/phase/fastflyblockbreak",
+    "sources": "https://github.com/phase/fastflyblockbreak"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/ffbb/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.jadon.ffbb.FFBB"
+    ]
+  },
+  "mixins": [
+    "ffbb.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
